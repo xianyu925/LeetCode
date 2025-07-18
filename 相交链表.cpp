@@ -69,6 +69,7 @@ public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
         unordered_set<ListNode *> set;
         ListNode *p = headA;
+        while(p) {
             set.insert(p);
             p = p->next;
         }
